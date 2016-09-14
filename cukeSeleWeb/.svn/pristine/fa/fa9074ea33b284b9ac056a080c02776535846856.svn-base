@@ -1,0 +1,163 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Successful login with valid credentials",
+        "description": "",
+        "id": "login-action;successful-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14187370839,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Jira Home Page",
+            "match": {
+              "location": "Test_Steps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 372609062,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters UserName and Password",
+            "match": {
+              "location": "Test_Steps.user_enters_UserName_and_Password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20598680714,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User searches for issue",
+            "match": {
+              "location": "Test_Steps.user_searches_for_issue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 901141902,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Issue page gets opened",
+            "match": {
+              "location": "Test_Steps.issue_page_gets_opened()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Enter description to issue",
+        "description": "",
+        "id": "login-action;enter-description-to-issue",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44373958,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Issue page is open",
+            "match": {
+              "location": "Test_Steps.issue_page_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1449087848,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters description",
+            "match": {
+              "location": "Test_Steps.user_enters_description()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 198213761,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User submits description",
+            "match": {
+              "location": "Test_Steps.user_submits_description()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2342051373,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d51.0.2704.84)\n  (Driver info: chromedriver\u003d2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.21 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00272.45.0\u0027, revision: \u00275017cb8e7ca8e37638dc3091b2440b90a1d8686f\u0027, time: \u00272015-02-27 09:10:26\u0027\nSystem info: host: \u0027ICPL1434\u0027, ip: \u002710.12.41.121\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_65\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b), userDataDir\u003dC:\\Users\\SIDDHA~1.JAD\\AppData\\Local\\Temp\\scoped_dir17752_30434}, takesHeapSnapshot\u003dtrue, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d51.0.2704.84, platform\u003dWIN8_1, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 1c9973b7e00d5cff82c2224c870da11d\n*** Element info: {Using\u003dtag name, value\u003dp}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElementByTagName(RemoteWebElement.java:260)\r\n\tat org.openqa.selenium.By$ByTagName.findElement(By.java:330)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)\r\n\tat cucumberselenuim.cucumberseleniumexample.stepDefinition.Test_Steps.description_text_gets_updated(Test_Steps.java:74)\r\n\tat ✽.Then description text gets updated(Login_Test.feature:13)\r\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "description text gets updated",
+            "match": {
+              "location": "Test_Steps.description_text_gets_updated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Successful LogOut",
+        "description": "",
+        "id": "login-action;successful-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4318854090,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User LogOut from the Application",
+            "match": {
+              "location": "Test_Steps.user_LogOut_from_the_Application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 209291,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Message displayed LogOut Successfully",
+            "match": {
+              "location": "Test_Steps.message_displayed_LogOut_Successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Action",
+    "description": "",
+    "id": "login-action",
+    "keyword": "Feature",
+    "uri": "Login_Test.feature"
+  }
+]

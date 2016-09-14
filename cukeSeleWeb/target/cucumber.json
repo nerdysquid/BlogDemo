@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Successful login with valid credentials",
+        "description": "",
+        "id": "login-action;successful-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13157641303,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Jira Home Page",
+            "match": {
+              "location": "Login.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40885141221,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters UserName and Password",
+            "match": {
+              "location": "Login.user_enters_UserName_and_Password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61717799,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is logged in",
+            "match": {
+              "location": "Login.user_is_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Action",
+    "description": "",
+    "id": "login-action",
+    "keyword": "Feature",
+    "uri": "1.0 login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Create Issues of all issue types",
+        "description": "",
+        "id": "create-issues;create-issues-of-all-issue-types",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 605753197,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User click on create issue button",
+            "match": {
+              "location": "CreateIssues.open_create_issue_popup()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52535,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Create issue pop gets opened",
+            "match": {
+              "location": "CreateIssues.issue_pop_opened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17218934311,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"QTM (QTM)\"}\n  (Session info: chrome\u003d52.0.2743.116)\n  (Driver info: chromedriver\u003d2.22.397929 (fb72fb249a903a0b1041ea71eb4c8b3fa0d9be5a),platform\u003dMac OS X 10.11.4 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 10.02 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.45.0\u0027, revision: \u00275017cb8e7ca8e37638dc3091b2440b90a1d8686f\u0027, time: \u00272015-02-27 09:10:26\u0027\nSystem info: host: \u0027ICPL12066.local\u0027, ip: \u002710.12.47.125\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.11.4\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.22.397929 (fb72fb249a903a0b1041ea71eb4c8b3fa0d9be5a), userDataDir\u003d/var/folders/pf/rwldjz7130s51prjb2w8lx_c0000gp/T/.org.chromium.Chromium.B2xlaL}, takesHeapSnapshot\u003dtrue, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d52.0.2743.116, platform\u003dMAC, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 2f555f26f600c12a4f74cc93341db434\n*** Element info: {Using\u003dlink text, value\u003dQTM (QTM)}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElementByLinkText(RemoteWebElement.java:212)\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:242)\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:167)\n\tat cucumberselenuim.cucumberseleniumexample.multitenentDataCreation.CreateIssues.user_selects_project(CreateIssues.java:61)\n\tat ✽.When User selects project(1.1 create_issues.feature:6)\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User selects project",
+            "match": {
+              "location": "CreateIssues.user_selects_project()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Select issuetypes",
+            "match": {
+              "location": "CreateIssues.user_selects_issuetypes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "enters summary and click on create button",
+            "match": {
+              "location": "CreateIssues.user_enters_summary()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Issues will be created in jira",
+            "match": {
+              "location": "CreateIssues.issue_create_in_jira()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create Issues",
+    "description": "",
+    "id": "create-issues",
+    "keyword": "Feature",
+    "uri": "1.1 create_issues.feature"
+  }
+]

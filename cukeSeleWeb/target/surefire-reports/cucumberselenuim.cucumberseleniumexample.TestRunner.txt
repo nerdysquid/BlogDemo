@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: cucumberselenuim.cucumberseleniumexample.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.383 sec <<< FAILURE! - in cucumberselenuim.cucumberseleniumexample.TestRunner
+And user is navigated to login page(Scenario: Verify registered customer details)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at cucumberselenuim.cucumberseleniumexample.CustomerRegistrationForm.CustomerDataVerification.verify_user_page(CustomerDataVerification.java:57)
+	at ✽.And user is navigated to login page(feature/JsfFormCheck.feature:15)
+
+Scenario: Verify registered customer details  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at cucumberselenuim.cucumberseleniumexample.CustomerRegistrationForm.CustomerDataVerification.verify_user_page(CustomerDataVerification.java:57)
+	at ✽.And user is navigated to login page(feature/JsfFormCheck.feature:15)
+
