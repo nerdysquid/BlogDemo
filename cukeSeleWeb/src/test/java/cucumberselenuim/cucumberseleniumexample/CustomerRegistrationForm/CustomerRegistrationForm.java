@@ -24,11 +24,17 @@ public class CustomerRegistrationForm{
 		public void user_is_on_Google_Page() throws Throwable {
 			// Write code here that turns the phrase above into concrete actions
 			// chmod this to make this executable -> chmod +x file
-			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.get("http://localhost:8080/JavaServerFaces/faces/default.xhtml");
-			totalData = driver.findElements(By.className("order-table")).get(0).findElements(By.tagName("tr")).size();
+			String browserType = System.getProperty("BROWSER");
+			if(browserType != null && browserType == "CHROME"){
+				System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+				driver = new ChromeDriver();
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driver.get("http://localhost:8080/JavaServerFaces/faces/default.xhtml");
+				totalData = driver.findElements(By.className("order-table")).get(0).findElements(By.tagName("tr")).size();
+			}else{
+				System.out.println("chrome is not your browser of choice..."+ browserType);
+			}
+			
 		}
 		
 		@When("^User enters John as customer name$")
